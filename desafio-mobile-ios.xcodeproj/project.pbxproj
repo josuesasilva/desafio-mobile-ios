@@ -7,21 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA667E811F50B9CA0098D604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA667E801F50B9CA0098D604 /* AppDelegate.swift */; };
-		CA667E831F50B9CA0098D604 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA667E821F50B9CA0098D604 /* ViewController.swift */; };
-		CA667E861F50B9CA0098D604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA667E841F50B9CA0098D604 /* Main.storyboard */; };
-		CA667E881F50B9CA0098D604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA667E871F50B9CA0098D604 /* Assets.xcassets */; };
-		CA667E8B1F50B9CA0098D604 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA667E891F50B9CA0098D604 /* LaunchScreen.storyboard */; };
+		CACBBDED1F5221C700F27D3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACBBDEB1F5221C700F27D3A /* AppDelegate.swift */; };
+		CACBBDEE1F5221C700F27D3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACBBDEC1F5221C700F27D3A /* ViewController.swift */; };
+		CACBBDF21F5221EF00F27D3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CACBBDF01F5221EF00F27D3A /* Assets.xcassets */; };
+		CACBBDF31F5221EF00F27D3A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CACBBDF11F5221EF00F27D3A /* Info.plist */; };
+		CACBBDF81F52222A00F27D3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CACBBDF61F52222A00F27D3A /* LaunchScreen.storyboard */; };
+		CACBBDF91F52222A00F27D3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CACBBDF71F52222A00F27D3A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA667E7D1F50B9CA0098D604 /* desafio-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA667E801F50B9CA0098D604 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA667E821F50B9CA0098D604 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CA667E851F50B9CA0098D604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CA667E871F50B9CA0098D604 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CA667E8A1F50B9CA0098D604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CA667E8C1F50B9CA0098D604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CACBBDEB1F5221C700F27D3A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CACBBDEC1F5221C700F27D3A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CACBBDF01F5221EF00F27D3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CACBBDF11F5221EF00F27D3A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CACBBDF61F52222A00F27D3A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CACBBDF71F52222A00F27D3A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +55,62 @@
 		CA667E7F1F50B9CA0098D604 /* desafio-mobile-ios */ = {
 			isa = PBXGroup;
 			children = (
-				CA667E801F50B9CA0098D604 /* AppDelegate.swift */,
-				CA667E821F50B9CA0098D604 /* ViewController.swift */,
-				CA667E841F50B9CA0098D604 /* Main.storyboard */,
-				CA667E871F50B9CA0098D604 /* Assets.xcassets */,
-				CA667E891F50B9CA0098D604 /* LaunchScreen.storyboard */,
-				CA667E8C1F50B9CA0098D604 /* Info.plist */,
+				CACBBDFA1F52224700F27D3A /* helpers */,
+				CACBBDF41F52222A00F27D3A /* views */,
+				CACBBDEF1F5221EF00F27D3A /* resources */,
+				CACBBDE51F5220D600F27D3A /* models */,
+				CACBBDE41F5220D000F27D3A /* controllers */,
 			);
 			path = "desafio-mobile-ios";
+			sourceTree = "<group>";
+		};
+		CACBBDE41F5220D000F27D3A /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CACBBDEB1F5221C700F27D3A /* AppDelegate.swift */,
+				CACBBDEC1F5221C700F27D3A /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		CACBBDE51F5220D600F27D3A /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		CACBBDEF1F5221EF00F27D3A /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				CACBBDF01F5221EF00F27D3A /* Assets.xcassets */,
+				CACBBDF11F5221EF00F27D3A /* Info.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		CACBBDF41F52222A00F27D3A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CACBBDF51F52222A00F27D3A /* storyboards */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		CACBBDF51F52222A00F27D3A /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CACBBDF61F52222A00F27D3A /* LaunchScreen.storyboard */,
+				CACBBDF71F52222A00F27D3A /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		CACBBDFA1F52224700F27D3A /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +173,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA667E8B1F50B9CA0098D604 /* LaunchScreen.storyboard in Resources */,
-				CA667E881F50B9CA0098D604 /* Assets.xcassets in Resources */,
-				CA667E861F50B9CA0098D604 /* Main.storyboard in Resources */,
+				CACBBDF21F5221EF00F27D3A /* Assets.xcassets in Resources */,
+				CACBBDF31F5221EF00F27D3A /* Info.plist in Resources */,
+				CACBBDF91F52222A00F27D3A /* Main.storyboard in Resources */,
+				CACBBDF81F52222A00F27D3A /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,31 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA667E831F50B9CA0098D604 /* ViewController.swift in Sources */,
-				CA667E811F50B9CA0098D604 /* AppDelegate.swift in Sources */,
+				CACBBDED1F5221C700F27D3A /* AppDelegate.swift in Sources */,
+				CACBBDEE1F5221C700F27D3A /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		CA667E841F50B9CA0098D604 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CA667E851F50B9CA0098D604 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CA667E891F50B9CA0098D604 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CA667E8A1F50B9CA0098D604 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CA667E8D1F50B9CA0098D604 /* Debug */ = {
@@ -205,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -249,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -262,7 +293,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NBJCH42A7P;
-				INFOPLIST_FILE = "desafio-mobile-ios/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/desafio-mobile-ios/resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gtihub.josuesasilva.desafio-mobile-ios.desafio-mobile-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,7 +307,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NBJCH42A7P;
-				INFOPLIST_FILE = "desafio-mobile-ios/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/desafio-mobile-ios/resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gtihub.josuesasilva.desafio-mobile-ios.desafio-mobile-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +335,7 @@
 				CA667E911F50B9CA0098D604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
