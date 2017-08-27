@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA414C2F1F52257A0079B81B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA414C2E1F52257A0079B81B /* HomeViewController.swift */; };
+		CA414C331F522A4A0079B81B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA414C321F522A4A0079B81B /* Colors.swift */; };
+		CA414C351F522BB00079B81B /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA414C341F522BB00079B81B /* SplitViewController.swift */; };
+		CA414C381F522D3F0079B81B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA414C361F522D3F0079B81B /* TableViewCell.swift */; };
+		CA414C3B1F524E1D0079B81B /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA414C3A1F524E1D0079B81B /* RoundedImageView.swift */; };
+		CA414C3D1F5261EF0079B81B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA414C3C1F5261EF0079B81B /* DetailViewController.swift */; };
+		CA414C3F1F5266FD0079B81B /* ViewShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA414C3E1F5266FD0079B81B /* ViewShadow.swift */; };
 		CACBBDED1F5221C700F27D3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACBBDEB1F5221C700F27D3A /* AppDelegate.swift */; };
-		CACBBDEE1F5221C700F27D3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACBBDEC1F5221C700F27D3A /* ViewController.swift */; };
 		CACBBDF21F5221EF00F27D3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CACBBDF01F5221EF00F27D3A /* Assets.xcassets */; };
-		CACBBDF31F5221EF00F27D3A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CACBBDF11F5221EF00F27D3A /* Info.plist */; };
 		CACBBDF81F52222A00F27D3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CACBBDF61F52222A00F27D3A /* LaunchScreen.storyboard */; };
 		CACBBDF91F52222A00F27D3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CACBBDF71F52222A00F27D3A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA414C2E1F52257A0079B81B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CA414C321F522A4A0079B81B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CA414C341F522BB00079B81B /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		CA414C361F522D3F0079B81B /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CA414C3A1F524E1D0079B81B /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		CA414C3C1F5261EF0079B81B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CA414C3E1F5266FD0079B81B /* ViewShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewShadow.swift; sourceTree = "<group>"; };
 		CA667E7D1F50B9CA0098D604 /* desafio-mobile-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-mobile-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACBBDEB1F5221C700F27D3A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CACBBDEC1F5221C700F27D3A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CACBBDF01F5221EF00F27D3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CACBBDF11F5221EF00F27D3A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CACBBDF61F52222A00F27D3A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,7 +79,9 @@
 			isa = PBXGroup;
 			children = (
 				CACBBDEB1F5221C700F27D3A /* AppDelegate.swift */,
-				CACBBDEC1F5221C700F27D3A /* ViewController.swift */,
+				CA414C2E1F52257A0079B81B /* HomeViewController.swift */,
+				CA414C341F522BB00079B81B /* SplitViewController.swift */,
+				CA414C3C1F5261EF0079B81B /* DetailViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -93,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				CACBBDF51F52222A00F27D3A /* storyboards */,
+				CA414C361F522D3F0079B81B /* TableViewCell.swift */,
+				CA414C3A1F524E1D0079B81B /* RoundedImageView.swift */,
+				CA414C3E1F5266FD0079B81B /* ViewShadow.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -109,6 +125,7 @@
 		CACBBDFA1F52224700F27D3A /* helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CA414C321F522A4A0079B81B /* Colors.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -174,7 +191,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CACBBDF21F5221EF00F27D3A /* Assets.xcassets in Resources */,
-				CACBBDF31F5221EF00F27D3A /* Info.plist in Resources */,
 				CACBBDF91F52222A00F27D3A /* Main.storyboard in Resources */,
 				CACBBDF81F52222A00F27D3A /* LaunchScreen.storyboard in Resources */,
 			);
@@ -187,8 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA414C351F522BB00079B81B /* SplitViewController.swift in Sources */,
+				CA414C331F522A4A0079B81B /* Colors.swift in Sources */,
+				CA414C381F522D3F0079B81B /* TableViewCell.swift in Sources */,
 				CACBBDED1F5221C700F27D3A /* AppDelegate.swift in Sources */,
-				CACBBDEE1F5221C700F27D3A /* ViewController.swift in Sources */,
+				CA414C3F1F5266FD0079B81B /* ViewShadow.swift in Sources */,
+				CA414C2F1F52257A0079B81B /* HomeViewController.swift in Sources */,
+				CA414C3B1F524E1D0079B81B /* RoundedImageView.swift in Sources */,
+				CA414C3D1F5261EF0079B81B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gtihub.josuesasilva.desafio-mobile-ios.desafio-mobile-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -313,6 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gtihub.josuesasilva.desafio-mobile-ios.desafio-mobile-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
