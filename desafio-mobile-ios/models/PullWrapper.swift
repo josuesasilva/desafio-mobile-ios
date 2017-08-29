@@ -6,8 +6,18 @@
 //  Copyright © 2017 Josué. All rights reserved.
 //
 
-import UIKit
+import ObjectMapper
 
 class PullWrapper: Mappable {
-
+    
+    var items: [Pull]?
+    
+    required init?(map: Map){
+        
+    }
+    
+    func mapping(map: Map) {
+        items <- map
+    }
+    
 }

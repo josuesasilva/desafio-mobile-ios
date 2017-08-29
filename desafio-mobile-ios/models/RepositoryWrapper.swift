@@ -6,8 +6,17 @@
 //  Copyright © 2017 Josué. All rights reserved.
 //
 
-import UIKit
+import ObjectMapper
 
 class RepositoryWrapper: Mappable {
-
+    
+    var items: [Repository]?
+    
+    required init?(map: Map){
+        
+    }
+    
+    func mapping(map: Map) {
+        items <- map["items"]
+    }
 }

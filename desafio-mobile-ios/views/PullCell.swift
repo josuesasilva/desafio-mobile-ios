@@ -9,16 +9,25 @@
 import UIKit
 
 class PullCell: UITableViewCell {
+    
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var pullDescription: UILabel!
+    @IBOutlet weak var avatar: RoundedImageView!
+    @IBOutlet weak var username: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func setValue(pull: Pull) {
+        self.name.text = pull.title
+        self.pullDescription.text = pull.body
+        self.avatar.kf.setImage(with: URL(string: (pull.user?.avatar)!))
+        self.username.text = pull.user?.name
     }
 
 }

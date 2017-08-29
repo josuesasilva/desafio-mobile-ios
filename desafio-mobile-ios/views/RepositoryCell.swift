@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Kingfisher
 
-class RepositoryTableViewCell: UITableViewCell {
+class RepositoryCell: UITableViewCell {
 
     @IBOutlet weak var repoName: UILabel!
     @IBOutlet weak var repoDescription: UILabel!
@@ -18,6 +19,7 @@ class RepositoryTableViewCell: UITableViewCell {
     @IBOutlet weak var userFullName: UILabel!
     @IBOutlet weak var avatar: UIImageView!
     
+    var repository: Repository?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,6 +27,17 @@ class RepositoryTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    func setValue(repository: Repository) {
+        self.repository = repository
+        self.repoName.text = repository.name
+        self.repoDescription.text = repository.description
+        self.repoForks.text = String(describing: repository.forks!)
+        self.repoStars.text = String(describing: repository.stars!)
+        self.userName.text = repository.owner?.name
+        self.userFullName.text = ""
+        self.avatar.kf.setImage(with: URL(string: (repository.owner?.avatar)!))
     }
     
 }

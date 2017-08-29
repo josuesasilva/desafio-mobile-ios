@@ -1,5 +1,5 @@
 //
-//  DetailViewController.swift
+//  PullsViewController.swift
 //  desafio-mobile-ios
 //
 //  Created by Josué on 26/08/17.
@@ -11,7 +11,10 @@ import RxSwift
 import Alamofire
 import AlamofireObjectMapper
 
-class DetailViewController: UITableViewController {
+class PullsViewController: UITableViewController {
+    
+    var repo: String?
+    var owner: String?
     
     let disposeBag = DisposeBag()
     
@@ -24,7 +27,7 @@ class DetailViewController: UITableViewController {
         tableView.dataSource = nil
         
         let githubService = Github()
-        githubService.fetchPulls(owner: "", repo: "", success: self.onSuccess, error: self.onError)
+        githubService.fetchPulls(owner: owner!, repo: repo!, success: self.onSuccess, error: self.onError)
     }
     
     override func didReceiveMemoryWarning() {

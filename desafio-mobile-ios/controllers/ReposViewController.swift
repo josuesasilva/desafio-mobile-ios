@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  ReposViewController.swift
 //  desafio-mobile-ios
 //
 //  Created by Josué on 26/08/17.
@@ -11,9 +11,12 @@ import RxSwift
 import RxCocoa
 
 
-class RepositoriesViewController: UITableViewController {
+class ReposViewController: UITableViewController {
     
     let disposeBag = DisposeBag()
+    
+    var repo: String?
+    var owner: String?
     
     // MARK: - Lifecycle
 
@@ -44,12 +47,25 @@ class RepositoriesViewController: UITableViewController {
     func onError(error: Error?) {
     }
     
+    // MARK: - Delegate
+    
+    func onSelectItem(owner: String, repo: String) {
+        self.repo = repo
+        self.owner = owner
+        print("\(owner) - \(repo)")
+    }
+    
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let backItem = UIBarButtonItem()
-        backItem.title = ""
-        navigationItem.backBarButtonItem = backItem
+        if (segue.destination is PullsViewController) {
+            let backItem = UIBarButtonItem()
+            backItem.title = ""
+            navigationItem.backBarButtonItem = backItem
+            let vc = segue.destination as! PullsViewController
+            vc.repo = self.repo
+            vc.owner = self.owner
+        }
     }
 
 }
