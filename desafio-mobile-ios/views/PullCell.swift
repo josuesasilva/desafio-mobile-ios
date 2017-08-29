@@ -14,6 +14,8 @@ class PullCell: UITableViewCell {
     @IBOutlet weak var pullDescription: UILabel!
     @IBOutlet weak var avatar: RoundedImageView!
     @IBOutlet weak var username: UILabel!
+    
+    var pull: Pull?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +26,7 @@ class PullCell: UITableViewCell {
     }
     
     func setValue(pull: Pull) {
+        self.pull = pull
         self.name.text = pull.title
         self.pullDescription.text = pull.body
         self.avatar.kf.setImage(with: URL(string: (pull.user?.avatar)!))

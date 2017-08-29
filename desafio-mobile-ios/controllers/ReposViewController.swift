@@ -15,19 +15,13 @@ class ReposViewController: UITableViewController {
     
     let disposeBag = DisposeBag()
     
-    var repo: String?
-    var owner: String?
-    
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.delegate = nil
-        tableView.dataSource = nil
-        
-        let githubService = Github()
-        githubService.fetchRepos(success: self.onSuccess, error: self.onError)
+        setupNavbar()
+        setupTableView()
+        startService()
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,27 +39,44 @@ class ReposViewController: UITableViewController {
     }
     
     func onError(error: Error?) {
-    }
-    
-    // MARK: - Delegate
-    
-    func onSelectItem(owner: String, repo: String) {
-        self.repo = repo
-        self.owner = owner
-        print("\(owner) - \(repo)")
+        Alert.showError(context: self)
     }
     
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.destination is PullsViewController) {
-            let backItem = UIBarButtonItem()
-            backItem.title = ""
-            navigationItem.backBarButtonItem = backItem
-            let vc = segue.destination as! PullsViewController
-            vc.repo = self.repo
-            vc.owner = self.owner
+        if (segue.identifier == "pulls") {
+            let nav = segue.destination as! UINavigationController
+            let vc = nav.viewControllers[0] as! PullsViewController
+            let cell = sender as! RepositoryCell
+            vc.repo = cell.repository?.name
+            vc.owner = cell.repository?.owner?.name
         }
+    }
+    
+    // MARK: - Private methods
+    
+    private func setupNavbar() {
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
+    }
+    
+    private func setupTableView() {
+        tableView.delegate = nil
+        tableView.dataSource = nil
+        
+        tableView
+            .rx.itemSelected.subscribe { index -> Void in
+                let cell = self.tableView.cellForRow(at: index.element!)
+                self.performSegue(withIdentifier: "pulls", sender: cell)
+            }
+            .disposed(by: disposeBag)
+    }
+    
+    private func startService() {
+        let githubService = Github()
+        githubService.fetchRepos(success: self.onSuccess, error: self.onError)
     }
 
 }

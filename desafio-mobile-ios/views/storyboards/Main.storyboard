@@ -34,7 +34,7 @@
         <scene sceneID="huU-qi-BpP">
             <objects>
                 <tableViewController id="ShR-zc-yx2" customClass="PullsViewController" customModule="desafio_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" id="EBk-yc-5zp">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" id="EBk-yc-5zp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -45,7 +45,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddb-VR-qFY">
                                     <rect key="frame" x="60" y="0.0" width="200" height="28"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ 800 closed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGQ-0t-AQk">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ _ closed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGQ-0t-AQk">
                                             <rect key="frame" x="101" y="7" width="99" height="14"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="14" id="ZzH-Zh-IuA"/>
@@ -55,7 +55,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 opened" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw2-Es-eCB">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_ opened" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw2-Es-eCB">
                                             <rect key="frame" x="0.0" y="7" width="99" height="14"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="14" id="eFG-Td-686"/>
@@ -115,7 +115,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXK-Jf-Adh">
-                                            <rect key="frame" x="61" y="89" width="251" height="16"/>
+                                            <rect key="frame" x="61" y="95" width="251" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="2jj-7E-8lp"/>
                                             </constraints>
@@ -124,9 +124,9 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome Sobrenome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxf-ze-xiq">
-                                            <rect key="frame" x="61" y="105" width="251" height="16"/>
+                                            <rect key="frame" x="61" y="111" width="251" height="0.0"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="16" id="kmC-gg-Hwy"/>
+                                                <constraint firstAttribute="height" id="kmC-gg-Hwy"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
@@ -136,7 +136,7 @@
                                     <constraints>
                                         <constraint firstItem="qXK-Jf-Adh" firstAttribute="trailing" secondItem="cSW-i1-1v1" secondAttribute="trailingMargin" id="3TZ-Bo-HAG"/>
                                         <constraint firstItem="wIF-60-U8K" firstAttribute="leading" secondItem="cSW-i1-1v1" secondAttribute="leadingMargin" constant="8" id="KgJ-vf-2zB"/>
-                                        <constraint firstItem="qXK-Jf-Adh" firstAttribute="top" secondItem="Cnw-eI-KBL" secondAttribute="bottom" constant="12" id="QgS-SN-2b0"/>
+                                        <constraint firstItem="qXK-Jf-Adh" firstAttribute="top" secondItem="Cnw-eI-KBL" secondAttribute="bottom" constant="18" id="QgS-SN-2b0"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Cnw-eI-KBL" secondAttribute="trailing" id="UVn-HP-mUB"/>
                                         <constraint firstItem="Mim-YR-qIN" firstAttribute="leading" secondItem="cSW-i1-1v1" secondAttribute="leadingMargin" constant="8" id="Uss-2k-Z1J"/>
                                         <constraint firstItem="Cnw-eI-KBL" firstAttribute="leading" secondItem="cSW-i1-1v1" secondAttribute="leadingMargin" constant="8" id="aCH-a4-Kq9"/>
@@ -160,6 +160,10 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Repositório" id="sjt-4H-E9g"/>
+                    <connections>
+                        <outlet property="closedLabel" destination="yGQ-0t-AQk" id="1hP-m5-fDl"/>
+                        <outlet property="openedLabel" destination="Bw2-Es-eCB" id="sPg-xR-6gh"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCt-Rq-YGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -346,7 +350,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Github JavaPop" id="c2r-BY-ApI"/>
                     <connections>
-                        <segue destination="r92-01-tWH" kind="showDetail" identifier="showDetail" id="w1w-MK-wSh"/>
+                        <segue destination="r92-01-tWH" kind="showDetail" identifier="pulls" id="w1w-MK-wSh"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WmH-AA-Ks7" userLabel="First Responder" sceneMemberID="firstResponder"/>

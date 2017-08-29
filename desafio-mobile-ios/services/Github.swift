@@ -39,12 +39,12 @@ class Github: NSObject {
                     success: @escaping (Observable<[Pull]>) -> Void,
                     error: @escaping (Error?) -> Void) {
         
-        let url = URL(string: "\(baseUrl)\(reposUrl)/\(owner)/\(repo)/pulls")!
+        let url = URL(string: "\(baseUrl)\(pullsUrl)/\(owner)/\(repo)/pulls?state=all")!
         
         Alamofire.request(url)
-            .responseObject { (res: DataResponse<PullWrapper>) in
+            .responseArray { (res: DataResponse<[Pull]>) in
                 if (res.result.value != nil) && res.result.isSuccess {
-                    success(Observable.just(res.result.value!.items!))
+                    success(Observable.just(res.result.value!))
                 } else {
                     error(res.error)
                 }

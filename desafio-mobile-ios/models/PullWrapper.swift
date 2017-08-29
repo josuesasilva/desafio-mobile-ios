@@ -17,7 +17,7 @@ class PullWrapper: Mappable {
     }
     
     func mapping(map: Map) {
-        items <- map
+        items <- (map.currentValue as! Map)
     }
     
 }
