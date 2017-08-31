@@ -17,4 +17,5 @@ end
 target 'desafio-mobile-iosTests' do
   use_frameworks!
   shared_pods
+  pod 'Mockingjay'
 end
