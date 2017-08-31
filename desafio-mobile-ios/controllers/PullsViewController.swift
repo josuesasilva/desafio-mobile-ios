@@ -12,36 +12,39 @@ import RxCocoa
 import Alamofire
 import AlamofireObjectMapper
 
-class PullsViewController: UITableViewController {
+class PullsViewController: BaseViewController {
     
     @IBOutlet weak var openedLabel: UILabel!
     @IBOutlet weak var closedLabel: UILabel!
+    @IBOutlet weak var loading: UIActivityIndicatorView!
     
     var repo: String?
     var owner: String?
+    var pulls: Variable<[Pull]> = Variable([])
     
     var opened: Int = 0 {
         didSet {
-            openedLabel.text = openedLabel.text!
-                .replacingOccurrences(of: "_", with: String(opened))
+            setHeader(label: openedLabel, value: opened)
         }
     }
     
     var closed: Int = 0 {
         didSet {
-            closedLabel.text = closedLabel.text!
-                .replacingOccurrences(of: "_", with: String(closed))
+            setHeader(label: closedLabel, value: closed)
         }
     }
-    
-    let disposeBag = DisposeBag()
     
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavbar()
-        setupTableView()
+        setupTableView(loadingView: self.loading, completion: { index in
+            if let cell = self.tableView.cellForRow(at: index) as? PullCell {
+                if let url = URL(string: cell.pull?.url ?? "") {
+                    UIApplication.shared.openURL(url)
+                }
+            }
+        })
         startService()
     }
     
@@ -49,26 +52,38 @@ class PullsViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func setupNavbar() {
+        self.navigationItem.title = repo
+    }
+    
+    override func startService() {
+        let githubService = Github()
+        githubService.fetchPulls(owner: owner ?? "", repo: repo ?? "", page: self.currentPage,
+                                 success: self.onSuccess, error: self.onError)
+    }
+    
     // MARK: - API reponse
     
-    func onSuccess(pulls: Observable<[Pull]>) {
-        loadData(pulls: pulls)
-        countPulls(pulls: pulls)
+    func onSuccess(pulls: [Pull]) {
+        self.pulls.value.append(contentsOf: pulls)
+        self.loadDataSource(tableView: self.tableView,
+                            data: self.pulls,
+                            cellId: "pullCell",
+                            completion: { item, cell in
+                                if let c = cell as? PullCell {
+                                    c.setValue(pull: item)
+                                    self.countPulls(pulls: self.pulls.asObservable())
+                                    self.loadingStatus = false
+                                }
+        })
     }
     
     func onError(error: Error?) {
-        
+        Alert.showError(context: self)
+        self.loadingStatus = false
     }
     
     // MARK: - Private methods
-    
-    private func loadData(pulls: Observable<[Pull]>) {
-        pulls.bind(to: tableView.rx.items(cellIdentifier: "pullCell")) {
-            (index, pull: Pull, cell: PullCell) in
-            cell.setValue(pull: pull)
-            }
-            .disposed(by: disposeBag)
-    }
     
     private func countPulls(pulls: Observable<[Pull]>) {
         // results will update by page
@@ -83,28 +98,9 @@ class PullsViewController: UITableViewController {
             }.addDisposableTo(disposeBag)
     }
     
-    private func setupNavbar() {
-        self.navigationItem.title = repo
+    private func setHeader(label: UILabel, value: Int) {
+        label.text = label.text!
+            .replacingOccurrences(of: "_", with: String(value))
     }
     
-    private func setupTableView() {
-        tableView.delegate = nil
-        tableView.dataSource = nil
-        
-        tableView
-            .rx.itemSelected.subscribe { index -> Void in
-                if let cell = self.tableView.cellForRow(at: index.element!) as? PullCell {
-                    if let url = URL(string: cell.pull?.url ?? "") {
-                        UIApplication.shared.openURL(url)
-                    }
-                }
-            }
-            .disposed(by: disposeBag)
-    }
-    
-    private func startService() {
-        let githubService = Github()
-        githubService.fetchPulls(owner: owner ?? "", repo: repo ?? "",
-                                 success: self.onSuccess, error: self.onError)
-    }
 }

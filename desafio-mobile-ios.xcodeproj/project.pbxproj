@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5D3DA6AA2AA73B141E131007 /* Pods_desafio_mobile_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4D94272FCE826B763164B9 /* Pods_desafio_mobile_ios.framework */; };
+		CA0C05DD1F57A53400953383 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0C05DC1F57A53400953383 /* TableView.swift */; };
+		CA0C05DF1F57A8D500953383 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0C05DE1F57A8D500953383 /* BaseViewController.swift */; };
 		CA37FCE21F561DA900F72DC8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37FCE11F561DA900F72DC8 /* Alert.swift */; };
 		CA414C2F1F52257A0079B81B /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA414C2E1F52257A0079B81B /* ReposViewController.swift */; };
 		CA414C331F522A4A0079B81B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA414C321F522A4A0079B81B /* Colors.swift */; };
@@ -31,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		A7215ED0768602634CA8B99C /* Pods-desafio-mobile-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-mobile-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-desafio-mobile-ios/Pods-desafio-mobile-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		CA0C05DC1F57A53400953383 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		CA0C05DE1F57A8D500953383 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CA37FCE11F561DA900F72DC8 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		CA414C2E1F52257A0079B81B /* ReposViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposViewController.swift; sourceTree = "<group>"; };
 		CA414C321F522A4A0079B81B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 				CA414C2E1F52257A0079B81B /* ReposViewController.swift */,
 				CA414C341F522BB00079B81B /* SplitViewController.swift */,
 				CA414C3C1F5261EF0079B81B /* PullsViewController.swift */,
+				CA0C05DE1F57A8D500953383 /* BaseViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			children = (
 				CA414C321F522A4A0079B81B /* Colors.swift */,
 				CA37FCE11F561DA900F72DC8 /* Alert.swift */,
+				CA0C05DC1F57A53400953383 /* TableView.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -333,6 +339,7 @@
 				CA414C331F522A4A0079B81B /* Colors.swift in Sources */,
 				CA414C381F522D3F0079B81B /* RepositoryCell.swift in Sources */,
 				CACBBDED1F5221C700F27D3A /* AppDelegate.swift in Sources */,
+				CA0C05DF1F57A8D500953383 /* BaseViewController.swift in Sources */,
 				CA414C3F1F5266FD0079B81B /* ViewShadow.swift in Sources */,
 				CAEF21AE1F54E12F00F6F44F /* Pull.swift in Sources */,
 				CAEF21B01F54E37500F6F44F /* PullWrapper.swift in Sources */,
@@ -340,6 +347,7 @@
 				CAEF21A41F54C64000F6F44F /* Repository.swift in Sources */,
 				CAEF21AA1F54DA2800F6F44F /* User.swift in Sources */,
 				CA414C3B1F524E1D0079B81B /* RoundedImageView.swift in Sources */,
+				CA0C05DD1F57A53400953383 /* TableView.swift in Sources */,
 				CA414C3D1F5261EF0079B81B /* PullsViewController.swift in Sources */,
 				CAEF21AC1F54E05600F6F44F /* PullCell.swift in Sources */,
 				CA37FCE21F561DA900F72DC8 /* Alert.swift in Sources */,

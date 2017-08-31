@@ -83,6 +83,10 @@
                                 <constraint firstItem="Ddb-VR-qFY" firstAttribute="top" secondItem="Ggo-CV-6FC" secondAttribute="top" id="oqr-0m-daS"/>
                             </constraints>
                         </view>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" id="22V-sh-GxW">
+                            <rect key="frame" x="0.0" y="196" width="320" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pullCell" id="5ut-Ey-Tf2" customClass="PullCell" customModule="desafio_mobile_ios" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="56" width="320" height="140"/>
@@ -162,6 +166,7 @@
                     <navigationItem key="navigationItem" title="Repositório" id="sjt-4H-E9g"/>
                     <connections>
                         <outlet property="closedLabel" destination="yGQ-0t-AQk" id="1hP-m5-fDl"/>
+                        <outlet property="loading" destination="22V-sh-GxW" id="CTY-UA-0qr"/>
                         <outlet property="openedLabel" destination="Bw2-Es-eCB" id="sPg-xR-6gh"/>
                     </connections>
                 </tableViewController>
@@ -177,6 +182,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" id="sor-V4-vf4">
+                            <rect key="frame" x="0.0" y="148" width="320" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="repoCell" id="tqm-yn-Qo3" customClass="RepositoryCell" customModule="desafio_mobile_ios" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="120"/>
@@ -350,6 +359,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Github JavaPop" id="c2r-BY-ApI"/>
                     <connections>
+                        <outlet property="loading" destination="sor-V4-vf4" id="LPO-AX-nwV"/>
                         <segue destination="r92-01-tWH" kind="showDetail" identifier="pulls" id="w1w-MK-wSh"/>
                     </connections>
                 </tableViewController>
