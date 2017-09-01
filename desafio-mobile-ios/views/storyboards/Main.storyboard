@@ -33,7 +33,7 @@
         <!--Repositório-->
         <scene sceneID="huU-qi-BpP">
             <objects>
-                <tableViewController id="ShR-zc-yx2" customClass="PullsViewController" customModule="desafio_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PullsViewController" id="ShR-zc-yx2" customClass="PullsViewController" customModule="desafio_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" id="EBk-yc-5zp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,7 +177,7 @@
         <!--Github JavaPop-->
         <scene sceneID="IsX-IO-ikL">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="d3C-8Y-vHP" customClass="ReposViewController" customModule="desafio_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ReposViewController" clearsSelectionOnViewWillAppear="NO" id="d3C-8Y-vHP" customClass="ReposViewController" customModule="desafio_mobile_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="GJE-A3-3cd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

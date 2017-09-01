@@ -23,7 +23,7 @@ class ReposViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView(loadingView: self.loading, completion: { index in
-            let cell = self.tableView.cellForRow(at: index)
+            let cell = self.tableView.cellForRow(at: index!)
             self.performSegue(withIdentifier: "pulls", sender: cell)
         })
         startService()

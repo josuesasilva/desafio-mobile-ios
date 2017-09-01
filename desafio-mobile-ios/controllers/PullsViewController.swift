@@ -39,7 +39,7 @@ class PullsViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView(loadingView: self.loading, completion: { index in
-            if let cell = self.tableView.cellForRow(at: index) as? PullCell {
+            if let cell = self.tableView.cellForRow(at: index!) as? PullCell {
                 if let url = URL(string: cell.pull?.url ?? "") {
                     UIApplication.shared.openURL(url)
                 }

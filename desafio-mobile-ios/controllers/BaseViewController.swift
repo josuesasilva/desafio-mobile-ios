@@ -105,7 +105,7 @@ class BaseViewController: UITableViewController {
     }
     
     func setupTableView(loadingView: UIActivityIndicatorView,
-                                completion: @escaping (IndexPath) -> Void) {
+                                completion: @escaping (IndexPath?) -> Void) {
         self.loadingView = loadingView
         self.loadCells(tableView: self.tableView, completion: completion)
         self.willPaginate(tableView: self.tableView)
