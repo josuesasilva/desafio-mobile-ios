@@ -78,7 +78,7 @@ class BaseViewController: UITableViewController {
                     : Observable.empty()
         }
         
-        loadNextPageTrigger.debounce(1, scheduler: MainScheduler.asyncInstance)
+        loadNextPageTrigger.debounce(0.5, scheduler: MainScheduler.asyncInstance)
             .subscribe { _ in
                 self.currentPage += 1
                 self.loadingStatus = true
