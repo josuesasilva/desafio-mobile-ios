@@ -17,6 +17,8 @@
 		CA018F9E1F58BED700A4EDCE /* GithubTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA018F9D1F58BED700A4EDCE /* GithubTest.swift */; };
 		CA0C05DD1F57A53400953383 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0C05DC1F57A53400953383 /* TableView.swift */; };
 		CA0C05DF1F57A8D500953383 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0C05DE1F57A8D500953383 /* BaseViewController.swift */; };
+		CA0D1F7B1F58D63500E470BF /* pulls.json in Resources */ = {isa = PBXBuildFile; fileRef = CA0D1F791F58D63500E470BF /* pulls.json */; };
+		CA0D1F7C1F58D63500E470BF /* repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = CA0D1F7A1F58D63500E470BF /* repositories.json */; };
 		CA37FCE21F561DA900F72DC8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37FCE11F561DA900F72DC8 /* Alert.swift */; };
 		CA414C2F1F52257A0079B81B /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA414C2E1F52257A0079B81B /* ReposViewController.swift */; };
 		CA414C331F522A4A0079B81B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA414C321F522A4A0079B81B /* Colors.swift */; };
@@ -62,6 +64,8 @@
 		CA018F9D1F58BED700A4EDCE /* GithubTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubTest.swift; sourceTree = "<group>"; };
 		CA0C05DC1F57A53400953383 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		CA0C05DE1F57A8D500953383 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CA0D1F791F58D63500E470BF /* pulls.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pulls.json; sourceTree = "<group>"; };
+		CA0D1F7A1F58D63500E470BF /* repositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = repositories.json; sourceTree = "<group>"; };
 		CA37FCE11F561DA900F72DC8 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		CA414C2E1F52257A0079B81B /* ReposViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposViewController.swift; sourceTree = "<group>"; };
 		CA414C321F522A4A0079B81B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		CA018F881F58A4DF00A4EDCE /* desafio-mobile-iosTests */ = {
 			isa = PBXGroup;
 			children = (
+				CA0D1F791F58D63500E470BF /* pulls.json */,
+				CA0D1F7A1F58D63500E470BF /* repositories.json */,
 				CA018F9C1F58BEC800A4EDCE /* services */,
 				CA018F911F58A80A00A4EDCE /* models */,
 				CA018F891F58A4DF00A4EDCE /* desafio_mobile_iosTests.swift */,
@@ -351,6 +357,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0D1F7B1F58D63500E470BF /* pulls.json in Resources */,
+				CA0D1F7C1F58D63500E470BF /* repositories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

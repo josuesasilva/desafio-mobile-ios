@@ -29,6 +29,8 @@ class Github: NSObject {
                 if (res.result.value != nil) && res.result.isSuccess {
                     if let result = res.result.value?.items {
                         success(result)
+                    } else {
+                        error(nil)
                     }
                 } else {
                     error(res.error)
